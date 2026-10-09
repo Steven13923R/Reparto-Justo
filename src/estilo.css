@@ -1,22 +1,24 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #f8fafc;
-  background: #08111f;
+  background: #0f172a;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   color-scheme: dark;
   font-optical-sizing: auto;
   font-weight: 400;
-  --fondo: #08111f;
-  --panel: #111d2e;
-  --panel-claro: #17253a;
-  --borde: #35465d;
+  --fondo: #0f172a;
+  --panel: #1e293b;
+  --panel-claro: #273449;
+  --borde: #334155;
   --texto: #f8fafc;
-  --texto-suave: #c0ccda;
-  --agua: #22d3ee;
-  --salud: #34d399;
-  --advertencia: #fbbf24;
-  --critico: #f87171;
+  --texto-suave: #94a3b8;
+  --agua: #38bdf8;
+  --comida: #f59e0b;
+  --medicina: #10b981;
+  --salud: #059669;
+  --advertencia: #d97706;
+  --critico: #dc2626;
 }
 
 * {
@@ -27,9 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background:
-    radial-gradient(ellipse at 50% -25%, rgb(34 211 238 / 13%), transparent 55%),
-    var(--fondo);
+  background: var(--fondo);
   font-size: 16px;
 }
 
@@ -81,9 +81,9 @@ a:focus-visible {
 .marca__simbolo {
   display: grid;
   place-items: center;
-  border: 1px solid rgb(34 211 238 / 60%);
+  border: 1px solid color-mix(in srgb, var(--agua) 60%, transparent);
   color: var(--agua);
-  background: rgb(34 211 238 / 10%);
+  background: color-mix(in srgb, var(--agua) 10%, transparent);
   font-weight: 900;
 }
 
@@ -133,12 +133,12 @@ a:focus-visible {
 }
 
 .boton--principal {
-  color: #06131a;
-  background: var(--agua);
+  color: var(--texto);
+  background: #047857;
 }
 
 .boton--principal:hover {
-  background: #67e8f9;
+  background: #065f46;
 }
 
 .boton--grande {
@@ -164,7 +164,7 @@ a:focus-visible {
   justify-content: space-between;
   padding: 12px max(24px, calc((100vw - 1220px) / 2));
   border-bottom: 1px solid var(--borde);
-  background: rgb(8 17 31 / 90%);
+  background: rgb(15 23 42 / 94%);
 }
 
 .marca {
@@ -277,7 +277,7 @@ a:focus-visible {
   border-left: 4px solid var(--acento);
   border-radius: 12px;
   text-align: left;
-  background: #0b1727;
+  background: var(--panel);
   cursor: pointer;
 }
 
@@ -288,12 +288,12 @@ a:focus-visible {
 
 .recurso--comida,
 .control-recurso--comida {
-  --acento: var(--advertencia);
+  --acento: var(--comida);
 }
 
 .recurso--medicina,
 .control-recurso--medicina {
-  --acento: var(--critico);
+  --acento: var(--medicina);
 }
 
 .recurso--seleccionado {
@@ -355,7 +355,7 @@ a:focus-visible {
 
 .tarjeta-comunidad--seleccionada {
   border-color: var(--agua);
-  box-shadow: 0 0 0 1px rgb(34 211 238 / 30%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--agua) 30%, transparent);
 }
 
 .tarjeta-comunidad--alerta-critica {
@@ -400,7 +400,7 @@ a:focus-visible {
   border: 1px solid var(--borde);
   border-radius: 9px;
   color: var(--texto);
-  background: #0b1727;
+  background: var(--panel);
   cursor: pointer;
   font-weight: 700;
 }
@@ -494,7 +494,7 @@ a:focus-visible {
   padding: 11px 10px;
   border: 1px solid var(--borde);
   border-radius: 10px;
-  background: #0b1727;
+  background: var(--panel);
 }
 
 .control-recurso__nombre {
@@ -540,8 +540,8 @@ a:focus-visible {
 }
 
 .boton-cantidad:disabled {
-  color: #94a3b8;
-  background: #172235;
+  color: var(--texto-suave);
+  background: #273449;
   cursor: not-allowed;
 }
 
@@ -603,12 +603,12 @@ a:focus-visible {
 
 .pantalla-final--victoria .final-simbolo {
   color: var(--salud);
-  background: rgb(52 211 153 / 12%);
+  background: rgb(5 150 105 / 12%);
 }
 
 .pantalla-final--derrota .final-simbolo {
   color: var(--critico);
-  background: rgb(248 113 113 / 12%);
+  background: rgb(220 38 38 / 12%);
 }
 
 .resumen-final {
