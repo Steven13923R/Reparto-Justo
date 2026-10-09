@@ -14,14 +14,14 @@ Pulsa «Enviar y avanzar turno» o Enter para aplicar las asignaciones y continu
 ## 3. Enlace para abrirlo
 
 [Abrir Reparto Justo](http://localhost:5173/)  
-Enlace local: para abrir la app, primero inicia el servidor con los comandos de la sección siguiente.
+Es un enlace local: inicia el servidor con los comandos de la sección siguiente antes de abrirlo.
 
 ## 4. Cómo correrlo en otra máquina
 
 Con Node.js y npm instalados, desde la carpeta del proyecto:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -36,8 +36,8 @@ npm test
 
 ## 5. Qué dirigí yo y qué error encontré probando
 
-<!-- Completar: qué dirigí yo y qué error encontré probando. -->
+<!-- Completar con qué dirigí yo y qué error encontré probando. -->
 
 ## 6. Declaración de autoría
 
-<!-- Completar: qué herramienta usé, que el código lo generó un agente de IA bajo mi dirección y qué partes puedo explicar. -->
+<!-- Completar con la herramienta que usé, que el código lo generó un agente de IA bajo mi dirección y qué partes puedo explicar. -->
