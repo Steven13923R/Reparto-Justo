@@ -120,8 +120,9 @@ a:focus-visible {
 }
 
 .boton {
-  min-height: 52px;
-  padding: 13px 20px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 14px 22px;
   border: 1px solid transparent;
   border-radius: 12px;
   cursor: pointer;
@@ -539,9 +540,12 @@ a:focus-visible {
 }
 
 .boton-cantidad {
+  min-width: 44px;
+  min-height: 44px;
   width: 44px;
   height: 44px;
   flex: 0 0 44px;
+  padding: 8px;
   border: 1px solid #d6c7b7;
   border-radius: 8px;
   color: var(--texto);
@@ -578,9 +582,11 @@ a:focus-visible {
 }
 
 .boton--enviar {
+  min-width: 44px;
+  min-height: 44px;
   min-height: 56px;
   flex: 0 0 auto;
-  padding-inline: 24px;
+  padding: 14px 24px;
   font-size: 17px;
 }
 

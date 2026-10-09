@@ -351,6 +351,10 @@ app.addEventListener('click', (evento: MouseEvent) => {
   const boton = objetivo.closest<HTMLElement>('[data-accion]')
   if (!boton) return
 
+  if (boton instanceof HTMLButtonElement && typeof navigator.vibrate === 'function') {
+    navigator.vibrate(50)
+  }
+
   const accion = boton.dataset.accion
   if (accion === 'iniciar') {
     estado = crearEstadoInicial()
